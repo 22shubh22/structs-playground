@@ -6,7 +6,7 @@ publish = false
 
 [build-dependencies]
 bindgen = "0.33.0"
-gcc = "0.3"
+cc = "1.0"
 
 [dependencies]
 cssparser = "0.25.2"

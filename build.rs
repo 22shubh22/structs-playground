@@ -1,5 +1,5 @@
 extern crate bindgen;
-extern crate gcc;
+extern crate cc;
 
 fn main() {
     use bindgen;
@@ -22,7 +22,7 @@ fn main() {
 
     // This is really the other way around (the Rust code is compiled as a
     // static lib). But this doesn't matter much in practice.
-    gcc::Build::new()
+    cc::Build::new()
         .cpp(true)
         .file("cpp/Consumer.cpp")
         .compile("libgecko.a");
